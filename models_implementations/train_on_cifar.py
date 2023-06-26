@@ -9,7 +9,7 @@ from typing import Tuple
 from torchvision import transforms
 from torchvision.datasets import CIFAR100, CIFAR10
 
-from fedmd.models_implementations.utils import save_model, load_model
+from late_fedmd_revisit.models_implementations.utils import save_model, load_model
 
 DEVICE = "cuda"
 DATA_PATH = os.getcwd()
