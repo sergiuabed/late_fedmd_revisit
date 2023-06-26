@@ -1,0 +1,6 @@
+data/cifar100/data/raw
+data/cifar100/preprocessing/cifar-100-python
+cifar-10-python.tar.gz
+cifar-10-batches-py/*
+checkpoints_public_data
+data/cifar-10-batches-py/*
