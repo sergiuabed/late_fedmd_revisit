@@ -12,7 +12,7 @@ def get_architecture_clients():
     #this function returns a dictionary:
     #   key = network architecture name
     #   value = list of clients using this model architecture
-    filename ="fedmd/client/client_architectures.csv"
+    filename ="late_fedmd_revisit/client/client_architectures.csv"
     architecture_clients = {}
     with open(filename,'r') as data:
         for line in csv.reader(data):
@@ -74,7 +74,7 @@ class Server:
 
     def init_accuracy_dict(self):
         for c in self.clients:
-            filename = os.getcwd() + f"/fedmd/independent_train/client{c.client_id}/stats_{self.alpha}.csv"
+            filename = os.getcwd() + f"/late_fedmd_revisit/independent_train/client{c.client_id}/stats_{self.alpha}.csv"
             with open(filename, 'r') as data:
                 highest_acc = 0
                 for line in csv.reader(data):
