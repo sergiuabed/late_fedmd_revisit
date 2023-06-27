@@ -8,7 +8,7 @@ from numpy import asarray
 from torch.utils.data import Dataset
 
 IMAGE_SIZE = 32
-IMAGES_DIR = os.path.join('fedmd', 'data', 'cifar100', 'data', 'raw', 'img')
+IMAGES_DIR = os.path.join('late_fedmd_revisit', 'data', 'cifar100', 'data', 'raw', 'img')
 #IMAGES_DIR = os.path.join(os.getcwd(), 'data', 'cifar100', 'data', 'raw')
 
 class ClientPrivateDataset(Dataset):
