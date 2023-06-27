@@ -19,7 +19,7 @@ FILE_PATH = os.getcwd() + '/logs'   # path for storing model checkpoints and log
 class Client:
 
     def __init__(self, client_id, public_train_dataloader,private_train_dataloader,
-                 private_validation_dataloader, current_consensus, model, model_architecture, digest_epochs=10, device=None):
+                 private_validation_dataloader, current_consensus, model, model_architecture, device=None, digest_epochs=10):
         self._model = model
         self.model_architecture = model_architecture
         self.client_id = client_id
