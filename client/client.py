@@ -8,9 +8,9 @@ from late_fedmd_revisit.models_implementations.train_on_cifar import _training, 
 from late_fedmd_revisit.models_implementations.utils import load_model, save_model
 import os
 
-LOCAL_EPOCH = 1 #5
+LOCAL_EPOCH = 5 #1
 LR_ADAM = 0.001
-LR_SGD = 0.0001 #0.001
+LR_SGD = 0.001 #0.0001
 WEIGHT_DECAY = 0.0001
 MOMENTUM = 0.9
 
